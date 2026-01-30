@@ -3,7 +3,6 @@ import { Plane, MapPin, Calendar, Users, Sparkles, Route, Lightbulb, Car, Euro }
 import { Button } from "@/components/ui/button";
 import { Label } from "@/components/ui/label";
 import { Slider } from "@/components/ui/slider";
-import { Checkbox } from "@/components/ui/checkbox";
 import { 
   Select,
   SelectContent,
@@ -19,26 +18,37 @@ import {
   SuggestedItinerary
 } from "@/data/itineraries";
 
+// Import images
+import baroqueTownImg from "@/assets/sicily-baroque-town.jpg";
+import etnaImg from "@/assets/etna-vineyards.jpg";
+import coastImg from "@/assets/sicily-coast.jpg";
+
+const dayImages = {
+  baroque: baroqueTownImg,
+  etna: etnaImg,
+  coast: coastImg
+};
+
 function ItineraryCard({ itinerary, onClick }: { itinerary: SuggestedItinerary; onClick: () => void }) {
   return (
     <div 
       className="feature-card cursor-pointer group"
       onClick={onClick}
     >
-      <div className="flex items-center gap-2 mb-2">
+      <div className="flex items-center gap-2 mb-3">
         <Route className="w-4 h-4 text-terracotta" />
-        <span className="text-xs font-bold tracking-widest uppercase text-terracotta">{itinerary.duration}</span>
+        <span className="text-xs font-bold tracking-[0.2em] uppercase text-terracotta">{itinerary.duration}</span>
       </div>
-      <h4 className="font-serif text-lg font-semibold text-foreground mb-2 group-hover:text-terracotta transition-colors">
+      <h4 className="text-xl font-semibold text-foreground mb-2 group-hover:text-terracotta transition-colors" style={{ fontFamily: "'Cormorant Garamond', Georgia, serif" }}>
         {itinerary.title}
       </h4>
-      <p className="text-slate text-sm mb-3">
-        <strong>{itinerary.route.join(" → ")}</strong>
+      <p className="text-slate text-sm mb-3" style={{ fontFamily: "'Lora', Georgia, serif" }}>
+        <strong className="text-teal">{itinerary.route.join(" → ")}</strong>
       </p>
-      <p className="text-slate text-sm leading-relaxed">{itinerary.description}</p>
+      <p className="text-slate text-sm leading-relaxed line-clamp-3" style={{ fontFamily: "'Lora', Georgia, serif" }}>{itinerary.description}</p>
       <div className="flex flex-wrap gap-2 mt-4">
         {itinerary.bestFor.slice(0, 3).map((tag) => (
-          <span key={tag} className="text-xs bg-cream-dark text-teal px-2 py-1">
+          <span key={tag} className="text-xs bg-cream-dark text-teal px-2 py-1" style={{ fontFamily: "'Lato', sans-serif" }}>
             {tag}
           </span>
         ))}
@@ -49,29 +59,39 @@ function ItineraryCard({ itinerary, onClick }: { itinerary: SuggestedItinerary; 
 
 function GeneratedItineraryView({ itinerary }: { itinerary: GeneratedItinerary }) {
   return (
-    <div className="animate-fade-in space-y-8">
-      {/* Header */}
-      <div className="content-card">
-        <div className="flex items-center gap-2 mb-4">
-          <Sparkles className="w-5 h-5 text-amber" />
-          <span className="text-xs font-bold tracking-widest uppercase text-amber">Your Custom Itinerary</span>
+    <div className="animate-fade-in space-y-10">
+      {/* Header with decorative elements */}
+      <div className="content-card text-center">
+        <div className="flex items-center justify-center gap-2 mb-6">
+          <span className="text-amber text-2xl">✦</span>
+          <span className="text-xs font-bold tracking-[0.3em] uppercase text-amber">Your Curated Journey</span>
+          <span className="text-amber text-2xl">✦</span>
         </div>
-        <h2 className="font-serif text-2xl md:text-3xl font-bold text-terracotta mb-4">{itinerary.title}</h2>
-        <p className="text-slate leading-relaxed">{itinerary.summary}</p>
+        <h2 className="text-3xl md:text-4xl font-semibold text-terracotta mb-6" style={{ fontFamily: "'Cormorant Garamond', Georgia, serif" }}>
+          {itinerary.title}
+        </h2>
+        <div className="ceramic-divider max-w-xs mx-auto mb-6" />
+        <p className="text-slate leading-relaxed max-w-2xl mx-auto" style={{ fontFamily: "'Lora', Georgia, serif" }}>
+          {itinerary.summary}
+        </p>
       </div>
 
       {/* Matched suggestion if any */}
       {itinerary.matchedItinerary && (
         <div className="insider-quote">
-          <div className="flex items-center gap-2 mb-3">
+          <div className="flex items-center gap-2 mb-4">
             <Lightbulb className="w-5 h-5 text-amber" />
-            <span className="text-xs font-bold tracking-widest uppercase text-amber">Recommended Route</span>
+            <span className="text-xs font-bold tracking-[0.2em] uppercase text-amber">Inspired By</span>
           </div>
-          <p className="text-foreground font-semibold mb-2">{itinerary.matchedItinerary.title}</p>
-          <p className="text-slate text-sm">{itinerary.matchedItinerary.description}</p>
-          <div className="flex flex-wrap gap-2 mt-4">
+          <p className="text-foreground font-semibold mb-2" style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '1.25rem' }}>
+            {itinerary.matchedItinerary.title}
+          </p>
+          <p className="text-slate text-sm mb-4" style={{ fontFamily: "'Lora', Georgia, serif" }}>
+            {itinerary.matchedItinerary.description}
+          </p>
+          <div className="flex flex-wrap gap-2">
             {itinerary.matchedItinerary.highlights.map((highlight, idx) => (
-              <span key={idx} className="text-xs bg-card text-teal px-3 py-1 border border-border">
+              <span key={idx} className="text-xs bg-card text-teal px-3 py-1.5 border border-border" style={{ fontFamily: "'Lato', sans-serif" }}>
                 ✓ {highlight}
               </span>
             ))}
@@ -79,71 +99,104 @@ function GeneratedItineraryView({ itinerary }: { itinerary: GeneratedItinerary }
         </div>
       )}
 
-      {/* Day by Day */}
-      <div className="space-y-4">
-        <h3 className="font-serif text-xl font-semibold text-teal flex items-center gap-2">
-          <Calendar className="w-5 h-5" />
-          Day-by-Day Itinerary
-        </h3>
+      {/* Day by Day with images */}
+      <div className="space-y-6">
+        <div className="text-center mb-8">
+          <h3 className="text-2xl font-semibold text-teal flex items-center justify-center gap-3" style={{ fontFamily: "'Cormorant Garamond', Georgia, serif" }}>
+            <span className="text-amber">❧</span>
+            Day-by-Day Itinerary
+            <span className="text-amber" style={{ transform: 'scaleX(-1)', display: 'inline-block' }}>❧</span>
+          </h3>
+        </div>
         
-        {itinerary.days.map((day) => (
-          <div key={day.day} className="feature-card">
-            <div className="flex items-center gap-3 mb-4">
-              <span className="number-badge">{day.day}</span>
-              <div>
-                <span className="text-xs font-bold tracking-widest uppercase text-slate block">{day.location}</span>
-                <span className="font-serif text-lg text-foreground">{day.title}</span>
+        {itinerary.days.map((day, index) => (
+          <div key={day.day} className="feature-card overflow-hidden">
+            {/* Show image for certain days */}
+            {day.image && (
+              <div className="relative -mx-6 -mt-6 md:-mx-8 md:-mt-8 mb-6 h-48 overflow-hidden">
+                <img 
+                  src={dayImages[day.image]} 
+                  alt={day.title}
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-card/90 via-transparent to-transparent" />
+                <div className="absolute bottom-4 left-6 md:left-8">
+                  <span className="number-badge text-lg">{day.day}</span>
+                </div>
+              </div>
+            )}
+            
+            <div className={`flex items-start gap-4 mb-5 ${day.image ? '' : 'mt-0'}`}>
+              {!day.image && <span className="number-badge flex-shrink-0">{day.day}</span>}
+              <div className={day.image ? 'ml-0' : ''}>
+                <span className="text-xs font-bold tracking-[0.2em] uppercase text-terracotta block mb-1">
+                  {day.location}
+                </span>
+                <h4 className="text-xl text-foreground" style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontWeight: 600 }}>
+                  {day.title}
+                </h4>
               </div>
             </div>
             
-            <div className="space-y-3 text-sm text-slate">
-              <div>
-                <strong className="text-teal">Morning:</strong> {day.morning}
+            <div className="space-y-4 text-sm" style={{ fontFamily: "'Lora', Georgia, serif" }}>
+              <div className="flex gap-3">
+                <span className="text-teal font-semibold min-w-[70px]">Morning</span>
+                <span className="text-slate">{day.morning}</span>
               </div>
-              <div>
-                <strong className="text-amber">Afternoon:</strong> {day.afternoon}
+              <div className="flex gap-3">
+                <span className="text-amber font-semibold min-w-[70px]">Afternoon</span>
+                <span className="text-slate">{day.afternoon}</span>
               </div>
-              <div>
-                <strong className="text-terracotta">Evening:</strong> {day.evening}
+              <div className="flex gap-3">
+                <span className="text-terracotta font-semibold min-w-[70px]">Evening</span>
+                <span className="text-slate">{day.evening}</span>
               </div>
             </div>
             
-            <div className="mt-4 pt-4 border-t border-border">
-              <div className="flex items-start gap-2">
+            <div className="mt-5 pt-5 border-t border-border">
+              <div className="flex items-start gap-3 bg-cream-dark p-4 -mx-2">
                 <Lightbulb className="w-4 h-4 text-amber flex-shrink-0 mt-0.5" />
-                <p className="text-xs text-slate italic">{day.insiderTip}</p>
+                <p className="text-xs text-slate italic" style={{ fontFamily: "'Lora', Georgia, serif" }}>
+                  <span className="text-amber font-semibold not-italic">Insider tip:</span> {day.insiderTip}
+                </p>
               </div>
             </div>
           </div>
         ))}
       </div>
 
-      {/* Practical Info */}
+      {/* Practical Info with elegant styling */}
+      <div className="text-center mb-6">
+        <h3 className="text-xl font-semibold text-teal" style={{ fontFamily: "'Cormorant Garamond', Georgia, serif" }}>
+          Practical Essentials
+        </h3>
+      </div>
+      
       <div className="grid md:grid-cols-2 gap-6">
         <div className="p-6 bg-cream-dark border-l-4 border-teal">
           <div className="flex items-center gap-2 mb-3">
             <Car className="w-5 h-5 text-teal" />
-            <span className="text-xs font-bold tracking-widest uppercase">Transportation</span>
+            <span className="text-xs font-bold tracking-[0.2em] uppercase text-teal">Transportation</span>
           </div>
-          <p className="text-slate text-sm">{itinerary.practicalInfo.transportation}</p>
+          <p className="text-slate text-sm" style={{ fontFamily: "'Lora', Georgia, serif" }}>{itinerary.practicalInfo.transportation}</p>
         </div>
         
         <div className="p-6 bg-cream-dark border-l-4 border-amber">
           <div className="flex items-center gap-2 mb-3">
             <Euro className="w-5 h-5 text-amber" />
-            <span className="text-xs font-bold tracking-widest uppercase">Budget</span>
+            <span className="text-xs font-bold tracking-[0.2em] uppercase text-amber">Budget</span>
           </div>
-          <p className="text-slate text-sm">{itinerary.practicalInfo.budget}</p>
+          <p className="text-slate text-sm" style={{ fontFamily: "'Lora', Georgia, serif" }}>{itinerary.practicalInfo.budget}</p>
         </div>
       </div>
 
       {/* Packing List */}
-      <div className="p-6 bg-card border border-border">
-        <h4 className="text-xs font-bold tracking-widest uppercase mb-4">Packing Essentials</h4>
-        <div className="grid grid-cols-2 gap-2">
+      <div className="p-8 bg-card border border-border">
+        <h4 className="text-xs font-bold tracking-[0.25em] uppercase text-terracotta mb-5 text-center">Packing Essentials</h4>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
           {itinerary.practicalInfo.packing.map((item, idx) => (
-            <div key={idx} className="flex items-center gap-2 text-sm text-slate">
-              <span className="w-2 h-2 bg-terracotta rounded-full" />
+            <div key={idx} className="flex items-center gap-3 text-sm text-slate" style={{ fontFamily: "'Lora', Georgia, serif" }}>
+              <span className="w-2 h-2 bg-terracotta rounded-full flex-shrink-0" />
               {item}
             </div>
           ))}
@@ -218,15 +271,22 @@ export function PlanTripSection() {
   };
 
   return (
-    <section className="py-16 bg-cream-dark">
+    <section className="py-20 bg-cream-dark">
       <div className="container mx-auto px-4">
-        {/* Section Header */}
-        <div className="section-header mb-12">
-          <h2 className="font-serif text-3xl md:text-4xl font-bold text-terracotta mb-4">
+        {/* Section Header with baroque styling */}
+        <div className="text-center mb-14">
+          <div className="flex items-center justify-center gap-3 mb-4">
+            <span className="text-amber text-xl">✦</span>
+            <span className="text-xs font-bold tracking-[0.3em] uppercase text-terracotta">Curated Experiences</span>
+            <span className="text-amber text-xl">✦</span>
+          </div>
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-terracotta mb-5" style={{ fontFamily: "'Cormorant Garamond', Georgia, serif" }}>
             Plan Your Sicily Journey
           </h2>
-          <p className="text-lg text-slate max-w-2xl mx-auto">
-            Tell us your preferences and we'll instantly create a personalized itinerary
+          <div className="ceramic-divider max-w-xs mx-auto mb-5" />
+          <p className="text-lg text-slate max-w-2xl mx-auto" style={{ fontFamily: "'Lora', Georgia, serif" }}>
+            Tell us your preferences and we'll craft a personalized itinerary—<br className="hidden md:inline" />
+            <em>each day unique, every moment considered</em>
           </p>
         </div>
 
@@ -234,16 +294,16 @@ export function PlanTripSection() {
           <>
             {/* Trip Builder Form */}
             <div className="content-card max-w-3xl mx-auto mb-16">
-              <div className="flex items-center gap-2 mb-6">
+              <div className="flex items-center justify-center gap-2 mb-8">
                 <Plane className="w-5 h-5 text-teal" />
-                <h3 className="font-serif text-xl font-semibold text-teal">Itinerary Builder</h3>
+                <h3 className="text-xl font-semibold text-teal" style={{ fontFamily: "'Cormorant Garamond', Georgia, serif" }}>Itinerary Builder</h3>
               </div>
 
               <div className="space-y-8">
                 {/* Duration */}
                 <div className="space-y-4">
-                  <Label className="text-sm font-bold tracking-widest uppercase">
-                    How many days? <span className="text-terracotta font-serif text-lg ml-2">{duration}</span>
+                  <Label className="text-xs font-bold tracking-[0.2em] uppercase text-foreground" style={{ fontFamily: "'Lato', sans-serif" }}>
+                    How many days? <span className="text-terracotta text-xl ml-2" style={{ fontFamily: "'Cormorant Garamond', Georgia, serif" }}>{duration}</span>
                   </Label>
                   <Slider
                     value={[duration]}
@@ -320,7 +380,8 @@ export function PlanTripSection() {
 
                 <Button 
                   onClick={handleGenerate}
-                  className="w-full bg-terracotta hover:bg-terracotta-dark text-white py-6 text-sm tracking-widest uppercase font-semibold"
+                  className="w-full bg-terracotta hover:bg-terracotta-dark text-white py-6 text-xs tracking-[0.25em] uppercase font-bold"
+                  style={{ fontFamily: "'Lato', sans-serif" }}
                 >
                   <Sparkles className="w-4 h-4 mr-2" />
                   Generate My Itinerary
@@ -329,9 +390,13 @@ export function PlanTripSection() {
             </div>
 
             {/* Suggested Itineraries */}
-            <div className="section-header mb-8">
-              <h3 className="font-serif text-2xl font-semibold text-teal">Suggested Itineraries</h3>
-              <p className="text-slate mt-2">Click any route to see your personalized version</p>
+            <div className="text-center mb-10">
+              <h3 className="text-2xl font-semibold text-teal mb-2" style={{ fontFamily: "'Cormorant Garamond', Georgia, serif" }}>
+                Suggested Itineraries
+              </h3>
+              <p className="text-slate" style={{ fontFamily: "'Lora', Georgia, serif" }}>
+                Click any route to see your personalized version
+              </p>
             </div>
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
