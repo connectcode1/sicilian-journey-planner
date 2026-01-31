@@ -3,6 +3,7 @@ import { Header } from "@/components/Header";
 import { Hero } from "@/components/Hero";
 import { Footer } from "@/components/Footer";
 import { ExploreSection } from "@/components/ExploreSection";
+import { SicilianFoodSection } from "@/components/SicilianFoodSection";
 import { PlanTripSection } from "@/components/PlanTripSection";
 import { InsiderTipsSection } from "@/components/InsiderTipsSection";
 import { CommunitySection } from "@/components/CommunitySection";
@@ -17,6 +18,7 @@ const Index = () => {
       
       <main>
         {activeTab === "explore" && <ExploreSection />}
+        {activeTab === "food" && <SicilianFoodSection />}
         {activeTab === "plan" && <PlanTripSection />}
         {activeTab === "tips" && <InsiderTipsSection />}
         {activeTab === "community" && <CommunitySection />}

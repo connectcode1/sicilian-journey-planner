@@ -10,6 +10,7 @@ interface HeaderProps {
 
 const tabs = [
   { id: "explore", label: "Explore Regions" },
+  { id: "food", label: "Sicilian Food" },
   { id: "plan", label: "Plan Your Trip" },
   { id: "tips", label: "Insider Tips" },
   { id: "community", label: "Community" },

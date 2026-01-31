@@ -18,16 +18,7 @@ import {
   SuggestedItinerary
 } from "@/data/itineraries";
 
-// Import images
-import baroqueTownImg from "@/assets/sicily-baroque-town.jpg";
-import etnaImg from "@/assets/etna-vineyards.jpg";
-import coastImg from "@/assets/sicily-coast.jpg";
-
-const dayImages = {
-  baroque: baroqueTownImg,
-  etna: etnaImg,
-  coast: coastImg
-};
+// Images removed for cleaner itinerary display
 
 function ItineraryCard({ itinerary, onClick }: { itinerary: SuggestedItinerary; onClick: () => void }) {
   return (
@@ -99,7 +90,7 @@ function GeneratedItineraryView({ itinerary }: { itinerary: GeneratedItinerary }
         </div>
       )}
 
-      {/* Day by Day with images */}
+      {/* Day by Day */}
       <div className="space-y-6">
         <div className="text-center mb-8">
           <h3 className="text-2xl font-semibold text-teal flex items-center justify-center gap-3" style={{ fontFamily: "'Cormorant Garamond', Georgia, serif" }}>
@@ -109,26 +100,11 @@ function GeneratedItineraryView({ itinerary }: { itinerary: GeneratedItinerary }
           </h3>
         </div>
         
-        {itinerary.days.map((day, index) => (
+        {itinerary.days.map((day) => (
           <div key={day.day} className="feature-card overflow-hidden">
-            {/* Show image for certain days */}
-            {day.image && (
-              <div className="relative -mx-6 -mt-6 md:-mx-8 md:-mt-8 mb-6 h-48 overflow-hidden">
-                <img 
-                  src={dayImages[day.image]} 
-                  alt={day.title}
-                  className="w-full h-full object-cover"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-card/90 via-transparent to-transparent" />
-                <div className="absolute bottom-4 left-6 md:left-8">
-                  <span className="number-badge text-lg">{day.day}</span>
-                </div>
-              </div>
-            )}
-            
-            <div className={`flex items-start gap-4 mb-5 ${day.image ? '' : 'mt-0'}`}>
-              {!day.image && <span className="number-badge flex-shrink-0">{day.day}</span>}
-              <div className={day.image ? 'ml-0' : ''}>
+            <div className="flex items-start gap-4 mb-5">
+              <span className="number-badge flex-shrink-0">{day.day}</span>
+              <div>
                 <span className="text-xs font-bold tracking-[0.2em] uppercase text-terracotta block mb-1">
                   {day.location}
                 </span>
