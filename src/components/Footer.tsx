@@ -11,11 +11,11 @@ export function Footer() {
               Questions or custom requests?
               <br />
               <a 
-                href="mailto:giulia@cubopro.com" 
+                href="mailto:sicilyinsider.guide@gmail.com" 
                 className="text-terracotta hover:underline inline-flex items-center gap-1 mt-1"
               >
                 <Mail className="w-4 h-4" />
-                giulia@cubopro.com
+                sicilyinsider.guide@gmail.com
               </a>
             </p>
           </div>
