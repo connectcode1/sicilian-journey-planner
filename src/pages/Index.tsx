@@ -5,6 +5,8 @@ import { Footer } from "@/components/Footer";
 import { ExploreSection } from "@/components/ExploreSection";
 import { SicilianFoodSection } from "@/components/SicilianFoodSection";
 import { PlanTripSection } from "@/components/PlanTripSection";
+import { RunningRoutesSection } from "@/components/RunningRoutesSection";
+import { LiteraryLocationsSection } from "@/components/LiteraryLocationsSection";
 import { InsiderTipsSection } from "@/components/InsiderTipsSection";
 import { CommunitySection } from "@/components/CommunitySection";
 
@@ -20,6 +22,8 @@ const Index = () => {
         {activeTab === "explore" && <ExploreSection />}
         {activeTab === "food" && <SicilianFoodSection />}
         {activeTab === "plan" && <PlanTripSection />}
+        {activeTab === "running" && <RunningRoutesSection />}
+        {activeTab === "literary" && <LiteraryLocationsSection />}
         {activeTab === "tips" && <InsiderTipsSection />}
         {activeTab === "community" && <CommunitySection />}
       </main>
