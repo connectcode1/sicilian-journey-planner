@@ -87,7 +87,7 @@ export function SicilianFoodSection() {
             Sicilian Cuisine
           </h2>
           <p className="text-lg text-slate max-w-2xl mx-auto">
-            From Arab-influenced street food to baroque desserts—every dish tells a story of conquest, tradition, and passion
+            From Arab-influenced street food to baroque desserts, every dish tells a story of conquest, tradition, and passion
           </p>
         </div>
 

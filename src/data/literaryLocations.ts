@@ -62,7 +62,7 @@ export const literaryLocations: LiteraryLocation[] = [
       { title: "The Godfather Part III", creator: "Francis Ford Coppola", year: "1990", type: "film" }
     ],
     description: "The stunning finale of the Godfather trilogy unfolds on these grand steps, where Michael Corleone's daughter Mary is shot. Italy's largest opera house is a masterpiece of neoclassical architecture.",
-    visitInfo: "Daily tours available (€10). Evening performances offer the full experience. The steps are public—recreate the iconic scene anytime.",
+    visitInfo: "Daily tours available (€10). Evening performances offer the full experience. The steps are public: recreate the iconic scene anytime.",
     quote: "Just when I thought I was out, they pull me back in."
   },
   {
@@ -74,7 +74,7 @@ export const literaryLocations: LiteraryLocation[] = [
       { title: "The Godfather", creator: "Francis Ford Coppola", year: "1972", type: "film" }
     ],
     description: "Michael Corleone's Sicilian exile was filmed in these medieval hill villages. Bar Vitelli, where he first sees Apollonia, still serves granita under Godfather memorabilia.",
-    visitInfo: "Free to explore. Bar Vitelli is a pilgrimage site—try their almond granita. The Chiesa di San Nicolò where Michael marries is still an active church.",
+    visitInfo: "Free to explore. Bar Vitelli is a pilgrimage site: try their almond granita. The Chiesa di San Nicolò where Michael marries is still an active church.",
     quote: "In Sicily, women are more dangerous than shotguns."
   },
   {
@@ -112,7 +112,7 @@ export const literaryLocations: LiteraryLocation[] = [
       { title: "Malèna", creator: "Giuseppe Tornatore", year: "2000", type: "film" },
       { title: "The Greeks", creator: "Various historians", year: "Ancient", type: "novel" }
     ],
-    description: "Tornatore's sensual WWII drama starring Monica Bellucci was filmed here. But Ortigia's literary history goes back to Homer—Odysseus sailed these waters, and Archimedes was born here.",
+    description: "Tornatore's sensual WWII drama starring Monica Bellucci was filmed here. But Ortigia's literary history goes back to Homer: Odysseus sailed these waters, and Archimedes was born here.",
     visitInfo: "Piazza Duomo and the surrounding streets feature in Malèna. Visit the Ear of Dionysius cave where Archimedes reportedly did acoustics experiments.",
     quote: "Syracuse is the greatest of Greek cities and the most beautiful."
   },
@@ -127,7 +127,7 @@ export const literaryLocations: LiteraryLocation[] = [
     ],
     description: "Nobel laureate Pirandello was born in the contrada 'Caos' (Chaos) near Agrigento. His existentialist works reflect the stark Sicilian landscape and complex psychology of its people.",
     visitInfo: "The Pirandello House Museum is open daily (€4). His ashes are interred beneath a pine tree in the garden, as he requested. The Valley of Temples is 3km away.",
-    quote: "Whatever is a reality today, whatever you touch and believe in and that seems real for you today, is going to be—like the reality of yesterday—an illusion tomorrow."
+    quote: "Whatever is a reality today, whatever you touch and believe in and that seems real for you today, is going to be, like the reality of yesterday, an illusion tomorrow."
   },
   {
     id: "catania-verga",
@@ -163,7 +163,7 @@ export const literaryLocations: LiteraryLocation[] = [
       { title: "Stromboli", creator: "Roberto Rossellini", year: "1950", type: "film" }
     ],
     description: "Rossellini's stark neorealist drama starring Ingrid Bergman was filmed on this volcanic island. Their scandalous on-set affair shocked 1950s America but their love story became legend.",
-    visitInfo: "Ferries from Milazzo. The volcano erupts every 15-20 minutes—night hikes offer spectacular views. The Rossellini-Bergman house is private but marked.",
+    visitInfo: "Ferries from Milazzo. The volcano erupts every 15-20 minutes; night hikes offer spectacular views. The Rossellini-Bergman house is private but marked.",
     quote: "God! My God! What mystery! What beauty!"
   }
 ];
