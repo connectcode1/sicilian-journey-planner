@@ -17,7 +17,7 @@ export const sicilianDishes: SicilianDish[] = [
     name: "Arancini",
     italianName: "Arancini / Arancine",
     category: "street-food",
-    description: "Golden, crispy rice balls stuffed with ragù, peas, and mozzarella—or in the 'bianco' version, with ham and béchamel. The eternal Palermo vs. Catania debate: are they arancine (feminine, round) or arancini (masculine, pointed)? In truth, shape varies by region, and both are magnificent.",
+    description: "Golden, crispy rice balls stuffed with ragù, peas, and mozzarella, or in the 'bianco' version, with ham and béchamel. The eternal Palermo vs. Catania debate: are they arancine (feminine, round) or arancini (masculine, pointed)? In truth, shape varies by region, and both are magnificent.",
     origin: "Palermo / Catania (10th century Arab influence)",
     ingredients: ["Arborio rice", "Saffron", "Ragù", "Peas", "Mozzarella", "Breadcrumbs"],
     whereToTry: "Ke Palle in Palermo, Savia in Catania"
@@ -37,7 +37,7 @@ export const sicilianDishes: SicilianDish[] = [
     name: "Sfincione",
     italianName: "Sfincione",
     category: "street-food",
-    description: "Palermo's thick, spongy pizza—nothing like its Neapolitan cousin. Topped with tomato, onions, anchovies, caciocavallo cheese, and breadcrumbs, it's sold from carts with vendors crying 'sfinciuuuune!' through the streets.",
+    description: "Palermo's thick, spongy pizza, nothing like its Neapolitan cousin. Topped with tomato, onions, anchovies, caciocavallo cheese, and breadcrumbs, it's sold from carts with vendors crying 'sfinciuuuune!' through the streets.",
     origin: "Palermo (17th century)",
     ingredients: ["Pizza dough", "Tomatoes", "Onions", "Anchovies", "Caciocavallo", "Breadcrumbs"],
     whereToTry: "Antica Focacceria San Francesco, any Palermo bakery"
@@ -57,7 +57,7 @@ export const sicilianDishes: SicilianDish[] = [
     name: "Stigghiola",
     italianName: "Stigghiola",
     category: "street-food",
-    description: "Lamb or goat intestines wrapped around spring onions and grilled over charcoal. The aroma wafts through Palermo's markets from early morning. Eat it straight from the grill with salt and lemon—pure, primal, and surprisingly delicious.",
+    description: "Lamb or goat intestines wrapped around spring onions and grilled over charcoal. The aroma wafts through Palermo's markets from early morning. Eat it straight from the grill with salt and lemon: pure, primal, and surprisingly delicious.",
     origin: "Palermo markets (ancient tradition)",
     ingredients: ["Lamb intestines", "Spring onions", "Salt", "Lemon"],
     whereToTry: "Ballarò and Vucciria markets in Palermo"
@@ -79,7 +79,7 @@ export const sicilianDishes: SicilianDish[] = [
     name: "Pasta con le Sarde",
     italianName: "Pasta con le Sarde",
     category: "pasta",
-    description: "The dish that captures Sicily in one bowl: fresh sardines, wild fennel, pine nuts, raisins, saffron, and bucatini. Sweet meets savory meets sea—Arab influence in every bite. Only made properly with wild fennel, foraged from hillsides.",
+    description: "The dish that captures Sicily in one bowl: fresh sardines, wild fennel, pine nuts, raisins, saffron, and bucatini. Sweet meets savory meets sea, with Arab influence in every bite. Only made properly with wild fennel, foraged from hillsides.",
     origin: "Palermo (9th century Arab influence)",
     ingredients: ["Bucatini", "Fresh sardines", "Wild fennel", "Pine nuts", "Raisins", "Saffron", "Breadcrumbs"],
     whereToTry: "Trattoria Ai Cascinari in Palermo"
@@ -89,7 +89,7 @@ export const sicilianDishes: SicilianDish[] = [
     name: "Busiate al Pesto Trapanese",
     italianName: "Busiate al Pesto Trapanese",
     category: "pasta",
-    description: "Hand-rolled spiral pasta with Trapani's unique pesto: raw tomatoes, almonds, garlic, and basil—no cooking, no pine nuts, no parmesan. The hand-rolling technique using a thin reed (busa) creates pasta that holds the sauce perfectly.",
+    description: "Hand-rolled spiral pasta with Trapani's unique pesto: raw tomatoes, almonds, garlic, and basil. No cooking, no pine nuts, no parmesan. The hand-rolling technique using a thin reed (busa) creates pasta that holds the sauce perfectly.",
     origin: "Trapani (Genoese sailors + local adaptation)",
     ingredients: ["Busiate pasta", "Raw tomatoes", "Almonds", "Garlic", "Basil", "Pecorino"],
     whereToTry: "Cantina Siciliana in Trapani"
@@ -99,7 +99,7 @@ export const sicilianDishes: SicilianDish[] = [
     name: "Pasta 'Ncasciata",
     italianName: "Pasta 'Ncasciata",
     category: "pasta",
-    description: "Messina's baroque baked pasta: rigatoni with ragù, peas, hard-boiled eggs, fried eggplant, caciocavallo, and salami—encased and baked until the crust forms. Featured in Montalbano novels, it's celebratory food meant for sharing.",
+    description: "Messina's baroque baked pasta: rigatoni with ragù, peas, hard-boiled eggs, fried eggplant, caciocavallo, and salami, encased and baked until the crust forms. Featured in Montalbano novels, it's celebratory food meant for sharing.",
     origin: "Messina (traditional feast dish)",
     ingredients: ["Rigatoni", "Ragù", "Eggplant", "Hard-boiled eggs", "Caciocavallo", "Peas"],
     whereToTry: "Home cooking or traditional trattorias in Messina"
@@ -119,7 +119,7 @@ export const sicilianDishes: SicilianDish[] = [
     name: "Anelletti al Forno",
     italianName: "Anelletti al Forno",
     category: "pasta",
-    description: "Ring-shaped pasta baked with ragù, peas, fried eggplant, and caciocavallo until a perfect crust forms. The Sunday lunch tradition in Palermo—every family has their recipe, passed through generations, never written down.",
+    description: "Ring-shaped pasta baked with ragù, peas, fried eggplant, and caciocavallo until a perfect crust forms. The Sunday lunch tradition in Palermo: every family has their recipe, passed through generations, never written down.",
     origin: "Palermo (Sunday tradition)",
     ingredients: ["Anelletti pasta", "Ragù", "Peas", "Fried eggplant", "Caciocavallo"],
     whereToTry: "Ferro di Cavallo in Palermo"
@@ -131,7 +131,7 @@ export const sicilianDishes: SicilianDish[] = [
     name: "Sarde a Beccafico",
     italianName: "Sarde a Beccafico",
     category: "seafood",
-    description: "Sardines stuffed with breadcrumbs, pine nuts, raisins, and orange zest, rolled to resemble beccafico birds (a noble delicacy the poor couldn't afford). Baked with bay leaves and orange juice—Arab-Sicilian fusion perfected.",
+    description: "Sardines stuffed with breadcrumbs, pine nuts, raisins, and orange zest, rolled to resemble beccafico birds (a noble delicacy the poor couldn't afford). Baked with bay leaves and orange juice: Arab-Sicilian fusion perfected.",
     origin: "Palermo (peasant imitation of noble dish)",
     ingredients: ["Fresh sardines", "Breadcrumbs", "Pine nuts", "Raisins", "Orange", "Bay leaves"],
     whereToTry: "Osteria dei Vespri in Palermo"
@@ -151,7 +151,7 @@ export const sicilianDishes: SicilianDish[] = [
     name: "Tonno alla Cipollata",
     italianName: "Tonno alla Cipollata",
     category: "seafood",
-    description: "Tuna steaks with sweet-sour onions, vinegar, and sugar—agrodolce at its finest. The mattanza (traditional tuna hunt) once dominated western Sicily; today Favignana keeps traditions alive, and the fish remains exceptional.",
+    description: "Tuna steaks with sweet-sour onions, vinegar, and sugar: agrodolce at its finest. The mattanza (traditional tuna hunt) once dominated western Sicily; today Favignana keeps traditions alive, and the fish remains exceptional.",
     origin: "Trapani / Favignana (mattanza tradition)",
     ingredients: ["Fresh tuna", "Onions", "White wine vinegar", "Sugar", "Mint"],
     whereToTry: "Marzamemi, San Vito Lo Capo"
@@ -161,7 +161,7 @@ export const sicilianDishes: SicilianDish[] = [
     name: "Pasta ai Ricci di Mare",
     italianName: "Pasta ai Ricci di Mare",
     category: "seafood",
-    description: "Spaghetti with raw sea urchin roe—nothing else except perhaps garlic, parsley, and olive oil. The bright orange roe tastes of the purest sea. A seasonal delicacy (winter-spring) when urchins are harvested from rocky shores.",
+    description: "Spaghetti with raw sea urchin roe, nothing else except perhaps garlic, parsley, and olive oil. The bright orange roe tastes of the purest sea. A seasonal delicacy (winter-spring) when urchins are harvested from rocky shores.",
     origin: "Coastal Sicily (traditional)",
     ingredients: ["Spaghetti", "Sea urchin roe", "Garlic", "Parsley", "Olive oil"],
     whereToTry: "Trattoria da Salvatore in Mondello, any coastal town in season"
@@ -193,7 +193,7 @@ export const sicilianDishes: SicilianDish[] = [
     name: "Farsumagru",
     italianName: "Farsumagru (Falsomagro)",
     category: "meat",
-    description: "The 'false lean': a large beef roll stuffed with hard-boiled eggs, salami, cheese, and sometimes peas—braised slowly in tomato sauce. The name mocks pretension: it looks simple but hides richness within.",
+    description: "The 'false lean': a large beef roll stuffed with hard-boiled eggs, salami, cheese, and sometimes peas, braised slowly in tomato sauce. The name mocks pretension: it looks simple but hides richness within.",
     origin: "Palermo (noble tradition)",
     ingredients: ["Beef flank", "Hard-boiled eggs", "Salami", "Caciocavallo", "Peas", "Tomato sauce"],
     whereToTry: "Traditional trattorias in Palermo"
@@ -203,10 +203,10 @@ export const sicilianDishes: SicilianDish[] = [
     name: "Caponata",
     italianName: "Caponata",
     category: "meat",
-    description: "Sweet and sour fried eggplant with tomatoes, celery, capers, olives, and vinegar. Every family argues their recipe is authentic—some add pine nuts, almonds, or octopus. Best made a day ahead when flavors marry.",
+    description: "Sweet and sour fried eggplant with tomatoes, celery, capers, olives, and vinegar. Every family argues their recipe is authentic. Some add pine nuts, almonds, or octopus. Best made a day ahead when flavors marry.",
     origin: "Throughout Sicily (17th century)",
     ingredients: ["Eggplant", "Tomatoes", "Celery", "Capers", "Olives", "Vinegar", "Sugar"],
-    whereToTry: "Every trattoria—compare and find your favorite"
+    whereToTry: "Every trattoria: compare and find your favorite"
   },
 
   // Desserts
@@ -215,7 +215,7 @@ export const sicilianDishes: SicilianDish[] = [
     name: "Cannolo Siciliano",
     italianName: "Cannolo Siciliano",
     category: "desserts",
-    description: "The king of Sicilian pastry: crispy fried tubes filled with sweet ricotta, chocolate chips, and candied fruit. The shells must be filled to order—soggy cannoli are sacrilege. Size varies from bite-sized to forearm-length.",
+    description: "The king of Sicilian pastry: crispy fried tubes filled with sweet ricotta, chocolate chips, and candied fruit. The shells must be filled to order; soggy cannoli are sacrilege. Size varies from bite-sized to forearm-length.",
     origin: "Caltanissetta / Palermo (Arab origin, carnival tradition)",
     ingredients: ["Flour shell", "Fresh ricotta", "Powdered sugar", "Chocolate chips", "Candied fruit", "Pistachios"],
     whereToTry: "Cappello in Palermo, Pasticceria Maria Grammatico in Erice"
@@ -235,7 +235,7 @@ export const sicilianDishes: SicilianDish[] = [
     name: "Granita Siciliana",
     italianName: "Granita con Brioche",
     category: "desserts",
-    description: "Not a slushie—a semi-frozen delicacy with texture like silk. Almond (Noto), mulberry (Catania), coffee, pistachio (Bronte), or lemon. Eaten for breakfast with warm brioche, dunking the bread like a Sicilian.",
+    description: "Not a slushie: a semi-frozen delicacy with texture like silk. Almond (Noto), mulberry (Catania), coffee, pistachio (Bronte), or lemon. Eaten for breakfast with warm brioche, dunking the bread like a Sicilian.",
     origin: "Catania / Eastern Sicily (16th century, snow from Etna)",
     ingredients: ["Sugar", "Water", "Fruit/nuts/coffee"],
     whereToTry: "Caffè Sicilia in Noto, Bam Bar in Taormina"
@@ -245,7 +245,7 @@ export const sicilianDishes: SicilianDish[] = [
     name: "Frutta Martorana",
     italianName: "Frutta di Martorana",
     category: "desserts",
-    description: "Marzipan shaped and painted to look exactly like real fruit—so realistic you pick them up expecting orange flesh. Created by nuns at La Martorana convent to decorate their garden for a visiting dignitary.",
+    description: "Marzipan shaped and painted to look exactly like real fruit, so realistic you pick them up expecting orange flesh. Created by nuns at La Martorana convent to decorate their garden for a visiting dignitary.",
     origin: "Palermo (12th century Martorana convent)",
     ingredients: ["Almonds", "Sugar", "Food coloring"],
     whereToTry: "Pasticceria Cappello in Palermo"
@@ -265,7 +265,7 @@ export const sicilianDishes: SicilianDish[] = [
     name: "Iris Fritta",
     italianName: "Iris alla Ricotta",
     category: "desserts",
-    description: "Fried brioche filled with sweet ricotta cream—essentially a fried cannolo but even more indulgent. Named for the opera singer Iris Mazzucato. Best eaten warm when ricotta is soft and dough is crisp.",
+    description: "Fried brioche filled with sweet ricotta cream: essentially a fried cannolo but even more indulgent. Named for the opera singer Iris Mazzucato. Best eaten warm when ricotta is soft and dough is crisp.",
     origin: "Palermo (1901, named after opera)",
     ingredients: ["Brioche dough", "Sweet ricotta", "Chocolate chips", "Powdered sugar"],
     whereToTry: "I Cuochini in Palermo"
@@ -307,7 +307,7 @@ export const sicilianDishes: SicilianDish[] = [
     name: "Limoncello Siciliano",
     italianName: "Limoncello",
     category: "drinks",
-    description: "Lemon liqueur made from the giant, fragrant lemons of Sicily—especially from the slopes of Etna. Served ice-cold as digestivo. Sicilian versions are less sweet than Amalfi's, letting lemon intensity shine.",
+    description: "Lemon liqueur made from the giant, fragrant lemons of Sicily, especially from the slopes of Etna. Served ice-cold as digestivo. Sicilian versions are less sweet than Amalfi's, letting lemon intensity shine.",
     origin: "Throughout Sicily",
     ingredients: ["Lemon zest", "Alcohol", "Sugar", "Water"],
     whereToTry: "Any restaurant after dinner"
@@ -337,46 +337,53 @@ export const sicilianDishes: SicilianDish[] = [
     name: "Nerello Mascalese",
     italianName: "Nerello Mascalese",
     category: "drinks",
-    description: "Etna's volcanic red: elegant, mineral, compared to Burgundy. Grown on ancient terraces above 600m altitude. The volcanic soil creates wines unlike any other—tasting of fire, ash, and resilience.",
+    description: "Etna's volcanic red: elegant, mineral, compared to Burgundy. Grown on ancient terraces above 600m altitude. The volcanic soil creates wines unlike any other, tasting of fire, ash, and resilience.",
     origin: "Mount Etna slopes",
     ingredients: ["Nerello Mascalese grapes"],
     whereToTry: "Tenuta delle Terre Nere, Benanti, Passopisciaro wineries"
-  },
-  {
-    id: "marsala",
-    name: "Marsala",
-    italianName: "Vino Marsala",
-    category: "drinks",
-    description: "Fortified wine from Trapani's coast: dry (used in cooking) to sweet (sipped as dessert wine). English merchant John Woodhouse 'discovered' it in 1796; historic cantine still age it in ancient barrels.",
-    origin: "Marsala, Western Sicily",
-    ingredients: ["Grillo, Inzolia, Catarratto grapes + grape spirits"],
-    whereToTry: "Florio, Pellegrino, Donnafugata cantinas in Marsala"
   },
   {
     id: "zibibbo",
     name: "Passito di Pantelleria",
     italianName: "Passito di Pantelleria",
     category: "drinks",
-    description: "Amber nectar from the volcanic island: Zibibbo grapes dried on racks, creating intensely sweet wine with dried apricot and honey. UNESCO-protected viticulture on an island closer to Tunisia than Sicily.",
-    origin: "Pantelleria island",
-    ingredients: ["Zibibbo (Muscat) grapes, sun-dried"],
-    whereToTry: "Donnafugata 'Ben Ryé', local producers on Pantelleria"
+    description: "Sweet wine from sun-dried Zibibbo grapes on the volcanic island of Pantelleria, closer to Tunisia than Sicily. UNESCO-recognized vineyard cultivation on stone terraces creates an intense dessert wine.",
+    origin: "Pantelleria Island",
+    ingredients: ["Zibibbo/Moscato grapes (sun-dried)"],
+    whereToTry: "Donnafugata 'Ben Ryé', Marco de Bartoli"
+  },
+  {
+    id: "mandorla-latte",
+    name: "Latte di Mandorla",
+    italianName: "Latte di Mandorla",
+    category: "drinks",
+    description: "Sicilian almond milk, made fresh from the island's prized almonds. Served cold and slightly sweetened. The base for granita di mandorla, or simply drunk as refreshment on hot days. Nothing like industrial versions.",
+    origin: "Throughout Sicily",
+    ingredients: ["Sicilian almonds", "Sugar", "Water"],
+    whereToTry: "Any bar or pasticceria, especially in Noto"
   }
 ];
 
 export const foodCategories = [
-  { id: 'street-food', name: 'Street Food', icon: '🥟' },
-  { id: 'pasta', name: 'Pasta', icon: '🍝' },
-  { id: 'seafood', name: 'Seafood', icon: '🦐' },
-  { id: 'meat', name: 'Meat & Sides', icon: '🍖' },
-  { id: 'desserts', name: 'Desserts', icon: '🍰' },
-  { id: 'drinks', name: 'Drinks & Wine', icon: '🍷' }
+  { id: "street-food", name: "Street Food", icon: "🥟" },
+  { id: "pasta", name: "Pasta", icon: "🍝" },
+  { id: "seafood", name: "Seafood", icon: "🦐" },
+  { id: "meat", name: "Meat & Sides", icon: "🍖" },
+  { id: "desserts", name: "Desserts", icon: "🍰" },
+  { id: "drinks", name: "Drinks & Wine", icon: "🍷" }
 ];
 
-export const sicilianFoodExpressions = [
-  { phrase: "Mangia che ti passa!", translation: "Eat and you'll feel better!", context: "The Sicilian remedy for everything" },
-  { phrase: "A tavola nun si 'nvicchia", translation: "At the table you don't age", context: "Eating together keeps you young" },
-  { phrase: "Cu mancia fa muddica", translation: "Those who eat make crumbs", context: "Doing things means making mistakes—it's natural" },
-  { phrase: "È megghiu un tintu amicu ca un bonu nìmicu", translation: "Better a bad friend than a good enemy", context: "Often said over shared food and wine" },
-  { phrase: "Panza china, cori cuntenti", translation: "Full belly, happy heart", context: "Simple wisdom around the table" }
+export interface FoodExpression {
+  phrase: string;
+  translation: string;
+  context: string;
+}
+
+export const sicilianFoodExpressions: FoodExpression[] = [
+  { phrase: "Ammucca!", translation: "Open your mouth! / Taste this!", context: "What nonna says when she's feeding you. Resistance is futile." },
+  { phrase: "Bonu!", translation: "Good! / Delicious!", context: "The highest compliment, often with a finger kiss." },
+  { phrase: "Mangia, mangia!", translation: "Eat, eat!", context: "You'll hear this constantly. Refusing food is deeply offensive." },
+  { phrase: "È una Norma!", translation: "It's a masterpiece!", context: "From the famous pasta, used to praise anything excellent." },
+  { phrase: "Cu mancia fa muddica", translation: "He who eats makes crumbs", context: "Those who act make mistakes. Doing nothing is never the answer." },
+  { phrase: "Panza china, cori cuntentu", translation: "Full belly, happy heart", context: "The Sicilian philosophy of life in five words." }
 ];

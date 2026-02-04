@@ -121,7 +121,7 @@ export function RunningRoutesSection() {
           </h2>
           <div className="ceramic-divider max-w-xs mx-auto mb-5" />
           <p className="text-lg text-slate max-w-2xl mx-auto" style={{ fontFamily: "'Lora', Georgia, serif" }}>
-            From volcanic trails to ancient temple paths—<em>discover Sicily at running pace</em>
+            From volcanic trails to ancient temple paths, <em>discover Sicily at running pace</em>
           </p>
         </div>
 

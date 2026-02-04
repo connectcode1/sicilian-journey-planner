@@ -150,7 +150,7 @@ export function LiteraryLocationsSection() {
           </h2>
           <div className="ceramic-divider max-w-xs mx-auto mb-5" />
           <p className="text-lg text-slate max-w-2xl mx-auto" style={{ fontFamily: "'Lora', Georgia, serif" }}>
-            Walk the paths of The Godfather, The White Lotus, and Inspector Montalbano—<em>where fiction meets Sicily</em>
+            Walk the paths of The Godfather, The White Lotus, and Inspector Montalbano: <em>where fiction meets Sicily</em>
           </p>
         </div>
 
